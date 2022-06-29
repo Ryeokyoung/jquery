@@ -6,11 +6,37 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<h1>jquery연습</h1>
+	<!-- html엔진이 그림/이글자를 자기만의 언어로 변경함  -->
 
-
+	<p>제이쿼리 연습페이지 입니다.</p>
+	<div>
+		<button type="button">버튼</button>
+	</div>
 
 </body>
 
+<script type="text/javascript">
+	//DOM(html이 그릴수있는 형태로 바뀐것) 생성된 직후 작동한다.
+	/*
+	(document).ready(function(){ //패턴을 외워야 함 ㅠ //ready라는 메소드 파라미터'()'에 일할 꺼를 달라는거 )
+	   alert("ready"); // 길어서 내려서 씀... 
+	}); // 끝이 이렇게 끝남 
+	 */
 
+	//페이지가 로딩된후 작동한다.
+	/*
+	$(window).load(function(){
+	   alert("load");
+	});
+	 */
+
+	//익명함수
+	//var act = function(){console.log("load");};
+	//$(window).load(act);
+	$(window).load(function() {
+		console.log("load");
+	});
+</script>
 
 </html>
