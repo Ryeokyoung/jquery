@@ -26,17 +26,29 @@
 	}); // 끝이 이렇게 끝남 
 	 */
 
-	//페이지가 로딩된후 작동한다.
+	
 	/*
-	$(window).load(function(){
+	$(window).load(function(){ //페이지가 로딩된후 작동한다.
 	   alert("load");
 	});
 	 */
 
 	//익명함수
-	//var act = function(){console.log("load");};
+	//var act = function(){console.log("load");}; //변수 정한이름 = 익명함수(){함수정의할 때 쓰는 것 }
+	
+	//이름있는 함수 : function act(a,b) {  // 
+		//함수 함수의 이름 파라미터'()' 파라미터의 값'a,b' 
+		//return a+b; //
+	//	}
+	
+	//var act = function  
+	  //console.log("로드");  //개발자 페이지에서 '로드'출력 
+	//}; // 내용이 길어 >요렇게 정리함  $(window).load(function() {console.log("load");
+	
+	
+	
 	//$(window).load(act);
-	$(window).load(function() {
+	$(window).load(function() {//load(동작내용/변수)를 쓰기로 이미 정해짐 : ~ 시점이라는 뜻 
 		console.log("load");
 	});
 </script>
