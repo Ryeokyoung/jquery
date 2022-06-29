@@ -2,17 +2,56 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript" src="/jquery/jquery/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="./assets/js/jquery/jquery-1.12.4.js"></script>
 <title>Insert title here</title>
 </head>
 <body>
 	<div>
-		<input id="btn" type="button" VALUE="js테스트버튼" />
-		<h1 id="display">이름출력영역</h1>
+		<button id="btn" type="button">js테스트버튼"</button>
+
+		<h3 id="display">이름출력영역</h3>
 	</div>
 
 </body>
+<script type="text/javascript">
 
+//버튼을 클릭했을 때 
+	$("#btn").on("click", function() { //거의 이 패턴임, 꼭 문법 확인하기
+		console.log("클릭"); //클릭하면 아래가 작동함 
+
+		
+		//1-1) var tag = $("#display");
+		
+		//1-2)console.log(tag);
+		//1-2)jquery.fn.init[h3#display, context: document, selector: '#display']라고 뜸  
+		//1-2)tag.text("홍길동"); //색상변경해야함 
+		//1-2)tag.text("<font color='red'>홍길동</font>");  //tag.text라 안먹음 
+		//1-2)tag.html("<font color='red'>홍길동</font>"); //r굳이 이렇게 안씀 
+		
+		$("#display").html("<font color='red'>홍길동</font>")
+		
+		//2) $("#display").html("<font color='purple'>김소연</font>")
+		
+	
+	$("#btn").on("dblclick", function() { //더블클릭하면 바뀜 < 이벤트 
+		console.log("클릭"); //클릭하면 아래가 작동함 
+		//3) $("#display").text("홍길동");
+		//  $("#display").css("color","red");
+	});
+
+	$("#btn").on("mouseleave", function() {
+		console.log("클릭");
+
+		$("#display").html("<font color='orange'>김소연</font>")
+
+	});
+	
+	$("#display").on("click", function() { //거의 이 패턴임, 꼭 문법 확인하기
+		console.log("h3	클릭"); //클릭하면 아래가 작동함 
+
+	});
+	
+</script>
 
 
 </html>

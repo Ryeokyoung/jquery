@@ -2,15 +2,22 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript" src="/jquery/jquery/jquery-1.12.4.js"></script>
-
+<script type="text/javascript" src="./assets/js/jquery/jquery-1.12.4.js"></script>
 <title>Insert title here</title>
 </head>
 
 <body>
-	<p id="p1"> abcdefghijklmn </p>
-	<p id="p2"> 학교종이 땡땡땡<br /> abcdefg </p>
+	<p id="p1">abcdefghijklmn</p>
+	<p id="p2">학교종이 땡땡땡<br /> abcdefg</p>
 </body>
-	
+<script type="text/javascript">
+	$("#p1").html("<strong>가나다라마바사아자차카타파하</strong>");
+
+	var str = $("#p2").text()
+	//text는 문자만 읽고, html은 br태그 등 다 반영해서 읽음
+	//var str = $("#p2").html()
+	console.log(str);
+</script>
+
 
 </html>

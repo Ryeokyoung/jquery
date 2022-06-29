@@ -2,8 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript" src="/jquery/jquery/jquery-1.12.4.js"></script>
-
+<script type="text/javascript" src="./assets/js/jquery/jquery-1.12.4.js"></script>
 <title>Insert title here</title>
 </head>
 
@@ -12,13 +11,16 @@
 	<ul>
 		<li>첫번째 아이템입니다.</li>
 		<li>두번째 아이템입니다.</li>
-		<li class="del">삭제할  아이템입니다.</li>
+		<li class="del">삭제할 아이템입니다.</li> <!-- 요거 -->
 		<li>네번째 아이템입니다.</li>
-		<li class="del">삭제할  아이템입니다.</li>
+		<li class="del">삭제할 아이템입니다.</li> <!-- 요거 -->
 		<li>다섯 번째 아이템입니다.</li>
 	</ul>
 
 </body>
-	
+<script type="text/javascript">
+	$(".del").remove(); // 2개를 지워라 .. 
+	//$("li").remove(); //li태그 싹다지워짐 
+</script>
 
 </html>

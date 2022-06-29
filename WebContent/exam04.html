@@ -2,22 +2,30 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript" src="/jquery/jquery/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="./assets/js/jquery/jquery-1.12.4.js"></script>
 
 <title>Insert title here</title>
 </head>
 
 <body>
 	<ul>
-		<li class="red"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-		<li class="blue"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-		<li class="red"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-		<li class="blue"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
-		<li class="green"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+		<li class="red">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li class="blue">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li class="red">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li class="blue">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li class="green">텍스트 텍스트 텍스트 텍스트 텍스트</li>
 	</ul>
 
 </body>
+<script type="text/javascript">
+	$("#first").css("color", "red");
+	$("#third").css("color", "blue");
+	$(".red.blue").css("color","blue"); //레드클래스 밑에 블루라는게 있으면 자식손자 상관없이... 
+	//p.txt1{...} 하위선택자 볼것 .. ㅠ 
 	
+	//css 기초랑 같이 공부할 것 
+</script>
+
 
 
 </html>

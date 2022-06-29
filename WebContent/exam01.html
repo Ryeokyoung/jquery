@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript" src="/jquery/jquery/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="/jquery/assets/js/jquery/jquery-1.12.4.js"></script>
 <!-- $ is not defined 는 jquery가 연결이 안된것 위의 라이브러리를 확인 할 것  --> 
 <title>Insert title here</title>
 </head>
@@ -19,6 +19,14 @@
 
 <script type="text/javascript">
 	//DOM: html이 그릴수있는 형태로 바뀐것//객체로 작업됨) 생성된 직후 작동한다.
+	$(document).ready(function(){
+		alert("래디");
+	});
+	
+	//페이지가 로딩된 후 작동한다.
+	$(window).load(function(){
+		alert("로드");
+	})
 	
 	/*
 	(document).ready(function(){ //패턴을 외워야 함 ㅠ //ready라는 메소드 파라미터'()'에 일할 꺼를 달라는거 )
@@ -48,9 +56,11 @@
 	
 	
 	//$(window).load(act);
-	$(window).load(function() {//load(동작내용/변수)를 쓰기로 이미 정해짐 : ~ 시점이라는 뜻 
-		console.log("load");
-	});
+	//$(window).load(function() {//load(동작내용/변수)를 쓰기로 이미 정해짐 : ~ 시점이라는 뜻 
+		//console.log("load");
+	//});
+	
+
 </script>
 
 </html>
